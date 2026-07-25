@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>SmileCare Dental</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="SmileCare Dental provides professional dental care including cleaning, fillings, braces, implants, teeth whitening and complete oral healthcare.">
+
+    <meta name="keywords"
+        content="Dental Clinic, Dentist, Teeth Whitening, Braces, Dental Implants, Root Canal, SmileCare Dental">
+
+    <meta name="author" content="SmileCare Dental">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- AOS Animation -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--==============================
+    Header Start
+===============================-->
+
+    <header class="header" id="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!--========== Logo ==========-->
+
+                <a href="index.html" class="logo">
+
+                    <img src="images/logo.png" alt="SmileCare Dental Logo">
+
+                </a>
+
+                <!--========== Desktop Menu ==========-->
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item dropdown">
+
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="our-clinic.html">Our Clinic</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!--========== Right Side ==========-->
+
+                <div class="nav-right">
+
+                    <!-- Dark Mode -->
+
+                    <button class="nav-icon-btn" id="theme-toggle">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <!-- RTL -->
+
+                    <button class="nav-icon-btn" id="rtl-toggle">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <!-- Login -->
+
+                    <a href="login.html" class="login-btn">
+
+                        Login
+
+                    </a>
+
+                    <!-- CTA -->
+
+                    <a href="book-appointment.html" class="appointment-btn">
+
+                        Book Appointment
+
+                    </a>
+
+                    <!-- Mobile Toggle -->
+
+                    <button class="menu-toggle" id="menu-toggle">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!--==============================
+    Mobile Sidebar
+===============================-->
+
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-menu">
+
+        <div class="mobile-header">
+
+            <a href="index.html" class="mobile-logo">
+
+                <img src="images/logo.png" alt="SmileCare Dental Logo">
+
+            </a>
+
+            <button class="close-menu">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <ul class="mobile-nav">
+
+            <li class="mobile-dropdown">
+
+                <button class="mobile-dropdown-btn">
+
+                    Home
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <ul class="mobile-submenu">
+
+                    <li><a href="index.html">Home 1</a></li>
+
+                    <li><a href="home-2.html">Home 2</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+
+                <a href="about.html">
+
+                    About
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="services.html">
+
+                    Services
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="our-clinic.html">
+
+                    Our Clinic
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="mobile-toggles">
+
+            <button class="nav-icon-btn" id="mobile-theme-toggle" type="button" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="nav-icon-btn" id="mobile-rtl-toggle" type="button" aria-label="Toggle RTL mode">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+        </div>
+
+        <div class="mobile-buttons">
+
+            <a href="login.html" class="mobile-login">
+
+                Login
+
+            </a>
+
+            <a href="#" class="mobile-book">
+
+                Book Appointment
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <section class="page-banner contact-banner">
+        <div class="page-banner-overlay"></div>
+
+        <div class="container">
+            <div class="page-banner-content">
+                <h1>Contact Us</h1>
+
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Contact</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!--==============================
+ Contact Info Section
+===============================-->
+
+    <section class="contact-info-section section-padding">
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-kicker">Get In Touch</span>
+                <h2>We're Always Here To Help You</h2>
+                <p class="section-description">
+                    Whether you have questions about our dental treatments, need to
+                    schedule an appointment, or require emergency dental care,
+                    our friendly team is ready to assist you.
+                </p>
+            </div>
+
+            <div class="contact-info-grid">
+
+                <!-- Card 1 -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <h4>Visit Our Clinic</h4>
+
+                    <p>
+                        123 Smile Street,<br>
+                        RS Puram,<br>
+                        Coimbatore - 641002
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+
+                    <h4>Call Us</h4>
+
+                    <p>
+                        +91 98765 43210<br>
+                        +91 98765 43211
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <h4>Email Us</h4>
+
+                    <p>
+                        info@smilecare.com<br>
+                        support@smilecare.com
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <h4>Working Hours</h4>
+
+                    <p>
+                        Mon - Sat<br>
+                        9:00 AM - 8:00 PM
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--=====================================
+    Contact Form Section Start
+======================================-->
+
+    <section class="contact-form-section section-padding">
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-kicker">Contact Form</span>
+                <h2>Send Us A Message</h2>
+                <p class="section-description">
+                    Have a question, need to schedule an appointment, or want to learn more
+                    about our dental services? Fill out the form below and our friendly team
+                    will get back to you as soon as possible.
+                </p>
+            </div>
+
+            <div class="contact-form-wrapper">
+
+                <form action="#" class="contact-form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email address">
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Enter subject">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea rows="7" placeholder="Write your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary contact-form-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--=====================================
+    Contact Form Section End
+======================================-->
+
+
+    <!--=====================================
+    Google Map Section
+======================================-->
+
+    <section class="map-section section-padding">
+
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-kicker">Our Location</span>
+                <h2>Find Our Clinic</h2>
+                <p class="section-description">
+                    Easily locate SmileCare Dental using the map below.
+                    We are conveniently located to provide quality dental
+                    care in a comfortable and welcoming environment.
+                </p>
+            </div>
+
+            <div class="map-wrapper">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250648.21208278887!2d76.79535600525807!3d11.010216261318808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1784799383765!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-wrapper">
+
+                <!-- Footer About -->
+
+                <div class="footer-about">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="SmileCare Dental">
+                    </a>
+
+                    <p>
+                        SmileCare Dental is dedicated to providing exceptional oral healthcare with advanced technology,
+                        experienced dentists, and personalized treatment for every patient.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="our-clinic.html">Our Clinic</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-contact">
+
+                    <h3>Contact</h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            Coimbatore, Tamil Nadu
+                        </li>
+
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +91 98765 43210
+                        </li>
+
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@smilecaredental.com
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Working Hours -->
+
+                <div class="footer-hours">
+
+                    <h3>Working Hours</h3>
+
+                    <ul>
+
+                        <li>Mon - Fri <span>09:00 AM - 08:00 PM</span></li>
+
+                        <li>Saturday <span>09:00 AM - 06:00 PM</span></li>
+
+                        <li>Sunday <span>Closed</span></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SmileCare Dental. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>SmileCare Dental</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="SmileCare Dental provides professional dental care including cleaning, fillings, braces, implants, teeth whitening and complete oral healthcare.">
+
+    <meta name="keywords"
+        content="Dental Clinic, Dentist, Teeth Whitening, Braces, Dental Implants, Root Canal, SmileCare Dental">
+
+    <meta name="author" content="SmileCare Dental">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- AOS Animation -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--==============================
+    Header Start
+===============================-->
+
+    <header class="header" id="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!--========== Logo ==========-->
+
+                <a href="index.html" class="logo">
+
+                    <img src="images/logo.png" alt="SmileCare Dental Logo">
+
+                </a>
+
+                <!--========== Desktop Menu ==========-->
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item dropdown">
+
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="our-clinic.html">Our Clinic</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!--========== Right Side ==========-->
+
+                <div class="nav-right">
+
+                    <!-- Dark Mode -->
+
+                    <button class="nav-icon-btn" id="theme-toggle">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <!-- RTL -->
+
+                    <button class="nav-icon-btn" id="rtl-toggle">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <!-- Login -->
+
+                    <a href="login.html" class="login-btn">
+
+                        Login
+
+                    </a>
+
+                    <!-- CTA -->
+
+                    <a href="book-appointment.html" class="appointment-btn">
+
+                        Book Appointment
+
+                    </a>
+
+                    <!-- Mobile Toggle -->
+
+                    <button class="menu-toggle" id="menu-toggle">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!--==============================
+    Mobile Sidebar
+===============================-->
+
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-menu">
+
+        <div class="mobile-header">
+
+            <a href="index.html" class="mobile-logo">
+
+                <img src="images/logo.png" alt="SmileCare Dental Logo">
+
+            </a>
+
+            <button class="close-menu">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <ul class="mobile-nav">
+
+            <li class="mobile-dropdown">
+
+                <button class="mobile-dropdown-btn">
+
+                    Home
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <ul class="mobile-submenu">
+
+                    <li><a href="index.html">Home 1</a></li>
+
+                    <li><a href="home-2.html">Home 2</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+
+                <a href="about.html">
+
+                    About
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="services.html">
+
+                    Services
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="our-clinic.html">
+
+                    Our Clinic
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="mobile-toggles">
+
+            <button class="nav-icon-btn" id="mobile-theme-toggle" type="button" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="nav-icon-btn" id="mobile-rtl-toggle" type="button" aria-label="Toggle RTL mode">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+        </div>
+
+        <div class="mobile-buttons">
+
+            <a href="login.html" class="mobile-login">
+
+                Login
+
+            </a>
+
+            <a href="#" class="mobile-book">
+
+                Book Appointment
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <section class="hero">
+
+        <div class="swiper hero-slider">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide hero-slide">
+
+                    <div class="hero-bg" style="background-image: url('images/hero-1.jpg');"></div>
+
+                    <div class="container">
+
+                        <div class="hero-content">
+
+                            <span>Welcome To SmileCare Dental</span>
+
+                            <h1>
+                                Healthy Smiles <br>
+                                Begin With Expert Care
+                            </h1>
+
+                            <p>
+                                Experience advanced dental treatments with modern technology,
+                                compassionate care, and experienced professionals.
+                            </p>
+
+                            <div class="hero-btns">
+
+                                <a href="book-appointment.html" class="btn-primary">
+                                    Book Appointment
+                                </a>
+
+                                <a href="services.html" class="btn-secondary">
+                                    Our Services
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide hero-slide">
+
+                    <div class="hero-bg" style="background-image: url('images/hero-2.jpg');"></div>
+
+                    <div class="container">
+
+                        <div class="hero-content">
+
+                            <span>Professional Dental Solutions</span>
+
+                            <h1>
+                                Your Smile <br>
+                                Our Priority
+                            </h1>
+
+                            <p>
+                                Personalized dental care for children and adults with
+                                world-class facilities.
+                            </p>
+
+                            <div class="hero-btns">
+
+                                <a href="book-appointment.html" class="btn-primary">
+                                    Book Appointment
+                                </a>
+
+                                <a href="#" class="btn-secondary">
+                                    Learn More
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide hero-slide">
+
+                    <div class="hero-bg" style="background-image: url('images/hero-3.jpg');"></div>
+
+                    <div class="container">
+
+                        <div class="hero-content">
+
+                            <span>Modern Technology</span>
+
+                            <h1>
+                                Beautiful Smiles <br>
+                                For Every Family
+                            </h1>
+
+                            <p>
+                                Complete dental care with advanced equipment and friendly
+                                specialists you can trust.
+                            </p>
+
+                            <div class="hero-btns">
+
+                                <a href="#" class="btn-primary">
+                                    Get Started
+                                </a>
+
+                                <a href="contact.html" class="btn-secondary">
+                                    Contact Us
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+    About SmileCare
+===============================-->
+
+    <section class="home-section about-section">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-visual" data-aos="fade-right">
+
+                    <div class="about-placeholder">
+
+                        <img src="images/about-overview.jpg" alt="SmileCare Dental overview">
+
+                    </div>
+
+                </div>
+
+                <div class="about-content" data-aos="fade-left">
+
+                    <span class="section-kicker">About SmileCare</span>
+
+                    <h2>Classic Dental Care with a Modern, Gentle Approach</h2>
+
+                    <p class="section-description">
+                        We deliver premium dentistry with calm guidance, thoughtful treatments, and a patient-first
+                        experience designed to feel reassuring from the first visit.
+                    </p>
+
+                    <div class="about-feature-grid">
+
+                        <article class="mini-feature-card">
+
+                            <div class="mini-feature-icon">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+
+                            <div>
+                                <h3>Our Mission</h3>
+                                <p>Protect every smile with honest care and modern treatment planning.</p>
+                            </div>
+
+                        </article>
+
+                        <article class="mini-feature-card">
+
+                            <div class="mini-feature-icon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                            <div>
+                                <h3>Our Vision</h3>
+                                <p>Set a classic standard for premium dental care in every visit.</p>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <a href="about.html" class="btn-primary about-btn">Learn More</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+    Our Dental Services
+===============================-->
+
+    <section class="home-section services-section">
+
+        <div class="container">
+
+            <div class="section-header" data-aos="fade-up">
+
+                <span class="section-kicker">Our Dental Services</span>
+
+                <h2>Comprehensive Care for Every Smile</h2>
+
+                <p class="section-description">
+                    From preventive checkups to advanced restorative and cosmetic treatments, our services are
+                    designed to keep your smile healthy, comfortable, and confident.
+                </p>
+
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card" data-aos="fade-up">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-broom"></i>
+                    </div>
+
+                    <h3>Preventive Care</h3>
+
+                    <p>Routine cleanings, exams, and early guidance to protect long-term oral health.</p>
+
+                    <a href="services.html" class="service-link">Learn More</a>
+
+                </article>
+
+                <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+
+                    <h3>Cosmetic Dentistry</h3>
+
+                    <p>Refined whitening, contouring, and smile enhancements for a polished look.</p>
+
+                    <a href="services.html" class="service-link">Learn More</a>
+
+                </article>
+
+                <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+
+                    <h3>Orthodontics</h3>
+
+                    <p>Comfortable alignment solutions that help create a balanced, confident smile.</p>
+
+                    <a href="services.html" class="service-link">Learn More</a>
+
+                </article>
+
+                <article class="service-card" data-aos="fade-up">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <h3>Restorative Care</h3>
+
+                    <p>High-quality fillings, crowns, and repairs that restore comfort and function.</p>
+
+                    <a href="services.html" class="service-link">Learn More</a>
+
+                </article>
+
+                <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+
+                    <h3>Pediatric Dentistry</h3>
+
+                    <p>Gentle treatments and guidance tailored for growing smiles and young patients.</p>
+
+                    <a href="services.html" class="service-link">Learn More</a>
+
+                </article>
+
+                <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+
+                    <h3>Oral Surgery</h3>
+
+                    <p>Carefully planned surgical procedures delivered with precision and comfort.</p>
+
+                    <a href="services.html" class="service-link">Learn More</a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+    Before & After Gallery
+===============================-->
+
+    <section class="home-section gallery-section">
+
+        <div class="container">
+
+            <div class="section-header" data-aos="fade-up">
+
+                <span class="section-kicker">Before & After Gallery</span>
+
+                <h2>Subtle Transformations with a Clean Finish</h2>
+
+                <p class="section-description">
+                    A simple gallery layout reserved for your future patient imagery, designed to stay refined and
+                    organized on every screen.
+                </p>
+
+            </div>
+
+            <div class="gallery-split-grid">
+
+                <article class="gallery-split-card" data-aos="fade-up">
+
+                    <div class="gallery-split-panel">
+                        <img src="images/gallery-before-1.jpg" alt="Before treatment smile result">
+                        <span class="gallery-split-label">Before</span>
+                    </div>
+
+                    <div class="gallery-split-panel">
+                        <img src="images/gallery-after-1.jpg" alt="After treatment smile result">
+                        <span class="gallery-split-label">After</span>
+                    </div>
+
+                </article>
+
+                <article class="gallery-split-card" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="gallery-split-panel">
+                        <img src="images/gallery-before-2.jpg" alt="Before treatment smile result">
+                        <span class="gallery-split-label">Before</span>
+                    </div>
+
+                    <div class="gallery-split-panel">
+                        <img src="images/gallery-after-2.jpg" alt="After treatment smile result">
+                        <span class="gallery-split-label">After</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="section-action" data-aos="fade-up">
+                <a href="#" class="btn-secondary">View Gallery</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==============================
+    Why Choose SmileCare
+===============================-->
+
+    <section class="home-section choose-section">
+
+        <div class="container">
+
+            <div class="section-header" data-aos="fade-up">
+
+                <span class="section-kicker">Why Choose SmileCare</span>
+
+                <h2>The Right Balance of Comfort, Quality, and Trust</h2>
+
+                <p class="section-description">
+                    We focus on thoughtful care, dependable results, and an atmosphere that feels calm, premium, and
+                    easy to return to.
+                </p>
+
+            </div>
+
+            <div class="choose-grid">
+
+                <article class="choose-card" data-aos="fade-up">
+
+                    <div class="choose-icon">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+
+                    <h3>Experienced Dentists</h3>
+
+                    <p>Skilled specialists who plan treatment with precision and a steady hand.</p>
+
+                </article>
+
+                <article class="choose-card" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="choose-icon">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+
+                    <h3>Gentle Experience</h3>
+
+                    <p>Care focused on comfort, clear communication, and reduced treatment stress.</p>
+
+                </article>
+
+                <article class="choose-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="choose-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+
+                    <h3>Modern Technology</h3>
+
+                    <p>Reliable tools and diagnostics that support accurate, efficient treatment.</p>
+
+                </article>
+
+                <article class="choose-card" data-aos="fade-up" data-aos-delay="300">
+
+                    <div class="choose-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <h3>Personalized Care</h3>
+
+                    <p>Treatment recommendations tailored to each patient's needs and goals.</p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+    Fun Facts
+===============================-->
+
+    <section class="home-section facts-section">
+
+        <div class="container">
+
+            <div class="section-header" data-aos="fade-up">
+
+                <span class="section-kicker">Fun Facts</span>
+
+                <h2>Confidence Built on Real Results</h2>
+
+                <p class="section-description">
+                    A few meaningful numbers that reflect the steady care, trusted outcomes, and patient confidence
+                    behind SmileCare Dental.
+                </p>
+
+            </div>
+
+            <div class="facts-grid">
+
+                <article class="fact-card" data-aos="fade-up">
+
+                    <div class="fact-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <strong class="fact-number" data-count="15" data-suffix="+">0</strong>
+
+                    <span class="fact-label">Years of Experience</span>
+
+                </article>
+
+                <article class="fact-card" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="fact-icon">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+
+                    <strong class="fact-number" data-count="5000" data-suffix="+">0</strong>
+
+                    <span class="fact-label">Happy Smiles</span>
+
+                </article>
+
+                <article class="fact-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="fact-icon">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+
+                    <strong class="fact-number" data-count="12" data-suffix="+">0</strong>
+
+                    <span class="fact-label">Dental Specialists</span>
+
+                </article>
+
+                <article class="fact-card" data-aos="fade-up" data-aos-delay="300">
+
+                    <div class="fact-icon">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+
+                    <strong class="fact-number" data-count="98" data-suffix="%">0</strong>
+
+                    <span class="fact-label">Patient Satisfaction</span>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==============================
+    Patient Testimonials
+===============================-->
+
+    <section class="home-section testimonial-section">
+
+        <div class="container">
+
+            <div class="section-header" data-aos="fade-up">
+
+                <span class="section-kicker">Patient Testimonials</span>
+
+                <h2>Warm Words from the People We Care For</h2>
+
+                <p class="section-description">
+                    A premium carousel for patient stories, built to feel smooth, elegant, and easy to browse on any
+                    device.
+                </p>
+
+            </div>
+
+            <div class="testimonial-shell">
+
+                <div class="swiper testimonial-swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <article class="testimonial-card">
+
+                                <div class="testimonial-head">
+
+                                    <div class="testimonial-avatar">
+                                        <img src="images/testi-1.jpg" alt="SmileCare Dental testimonial visual">
+                                    </div>
+
+                                    <div>
+                                        <h3>Ananya R.</h3>
+                                        <span>Coimbatore</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p>
+                                    Everything felt calm and professional. The care was gentle, the guidance was
+                                    clear, and the result exceeded my expectations.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <article class="testimonial-card">
+
+                                <div class="testimonial-head">
+
+                                    <div class="testimonial-avatar">
+                                        <img src="images/testi-2.jpg" alt="SmileCare Dental testimonial visual">
+                                    </div>
+
+                                    <div>
+                                        <h3>Rahul K.</h3>
+                                        <span>Pollachi</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p>
+                                    A very polished clinic experience. The team explained every step and made the
+                                    treatment feel easy to trust.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <article class="testimonial-card">
+
+                                <div class="testimonial-head">
+
+                                    <div class="testimonial-avatar">
+                                        <img src="images/testi-3.jpg" alt="SmileCare Dental testimonial visual">
+                                    </div>
+
+                                    <div>
+                                        <h3>Meera S.</h3>
+                                        <span>Madurai</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p>
+                                    Friendly, organized, and very reassuring. I appreciated the balanced approach to
+                                    treatment and comfort.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <article class="testimonial-card">
+
+                                <div class="testimonial-head">
+
+                                    <div class="testimonial-avatar">
+                                        <img src="images/testi-4.jpg" alt="SmileCare Dental testimonial visual">
+                                    </div>
+
+                                    <div>
+                                        <h3>Vikram P.</h3>
+                                        <span>Salem</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p>
+                                    The clinic felt premium without being intimidating. Clean design, steady care, and
+                                    thoughtful service throughout.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev" type="button" aria-label="Previous testimonial">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                    <div class="testimonial-pagination"></div>
+
+                    <button class="testimonial-next" type="button" aria-label="Next testimonial">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+    Call To Action
+===============================-->
+
+    <section class="home-section cta-section">
+
+        <div class="container">
+
+            <div class="cta-panel" data-aos="zoom-in">
+
+                <div class="cta-content">
+
+                    <span class="section-kicker">Call To Action</span>
+
+                    <h2>Ready for a More Confident Smile?</h2>
+
+                    <p class="section-description">
+                        Book a visit with SmileCare Dental and enjoy premium care, clear guidance, and a calm treatment
+                        experience from start to finish.
+                    </p>
+
+                </div>
+
+                <a href="book-appointment.html" class="btn-primary cta-btn">Book Appointment</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-wrapper">
+
+                <!-- Footer About -->
+
+                <div class="footer-about">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="SmileCare Dental">
+                    </a>
+
+                    <p>
+                        SmileCare Dental is dedicated to providing exceptional oral healthcare with advanced technology,
+                        experienced dentists, and personalized treatment for every patient.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="our-clinic.html">Our Clinic</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-contact">
+
+                    <h3>Contact</h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            Coimbatore, Tamil Nadu
+                        </li>
+
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +91 98765 43210
+                        </li>
+
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@smilecaredental.com
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Working Hours -->
+
+                <div class="footer-hours">
+
+                    <h3>Working Hours</h3>
+
+                    <ul>
+
+                        <li>Mon - Fri <span>09:00 AM - 08:00 PM</span></li>
+
+                        <li>Saturday <span>09:00 AM - 06:00 PM</span></li>
+
+                        <li>Sunday <span>Closed</span></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SmileCare Dental. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

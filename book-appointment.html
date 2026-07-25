@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment | SmileCare Dental</title>
+
+    <meta name="description"
+        content="Book a premium dental appointment with SmileCare Dental and choose your preferred service, doctor, date, and time in a seamless booking experience.">
+
+    <meta name="author" content="SmileCare Dental">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="appointment-page">
+
+    <main class="appointment-shell">
+
+        <header class="appointment-header">
+
+            <a href="index.html" class="appointment-logo" aria-label="SmileCare Dental home">
+                <img src="images/logo.png" alt="SmileCare Dental Logo">
+            </a>
+
+            <div class="appointment-tools" aria-label="Page controls">
+
+                <button class="nav-icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode"
+                    aria-pressed="false">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <button class="nav-icon-btn" id="rtl-toggle" type="button" aria-label="Toggle RTL mode"
+                    aria-pressed="false">
+                    <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+        <section class="appointment-intro" aria-labelledby="appointment-heading">
+
+            <span class="appointment-kicker">Premium Clinic Scheduling</span>
+
+            <h1 class="appointment-heading" id="appointment-heading">Book Appointment</h1>
+
+            <p class="appointment-description">
+                Reserve your visit with SmileCare Dental in just a few steps and enjoy a calm, premium booking
+                experience tailored to your schedule.
+            </p>
+
+        </section>
+
+        <section class="appointment-layout" aria-label="Appointment booking details">
+
+            <article class="appointment-visual" aria-label="Clinic preview">
+
+                <div class="appointment-image-wrap">
+                    <img src="images/book-appointment.jpg"
+                        alt="Modern dental clinic interior with professional dental care setup">
+
+                    <div class="appointment-floating-card" aria-label="Clinic information">
+                        <div class="appointment-floating-row">
+                            <div class="appointment-floating-icon" aria-hidden="true">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <span class="appointment-floating-label">Working Hours</span>
+                                <strong>Mon - Sat, 9:00 AM - 7:00 PM</strong>
+                            </div>
+                        </div>
+
+                        <div class="appointment-floating-divider" aria-hidden="true"></div>
+
+                        <div class="appointment-floating-row">
+                            <div class="appointment-floating-icon" aria-hidden="true">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+
+                            <div>
+                                <span class="appointment-floating-label">Emergency Contact Number</span>
+                                <strong>+91 98765 43210</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appointment-visual-copy">
+                    <span class="appointment-mini-tag">Trusted care, modern comfort</span>
+                    <h2>Designed for effortless scheduling and a more reassuring patient experience.</h2>
+                    <p>
+                        Everything you need to request an appointment is arranged in one focused flow, with a clean
+                        layout and a calming premium aesthetic.
+                    </p>
+                </div>
+
+                <div class="appointment-highlights" aria-label="Clinic highlights">
+
+                    <div class="appointment-highlight-card">
+                        <span class="appointment-highlight-value">24/7</span>
+                        <span class="appointment-highlight-label">Emergency Guidance</span>
+                    </div>
+
+                    <div class="appointment-highlight-card">
+                        <span class="appointment-highlight-value">12+</span>
+                        <span class="appointment-highlight-label">Years of Care</span>
+                    </div>
+
+                    <div class="appointment-highlight-card appointment-highlight-card--wide">
+                        <span class="appointment-highlight-value">950+</span>
+                        <span class="appointment-highlight-label">Happy Patients</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="appointment-form-card" aria-label="Appointment booking form">
+
+                <div class="appointment-form-head">
+                    <div>
+                        <span class="appointment-form-kicker">Step 01</span>
+                        <h2>Tell Us About Your Visit</h2>
+                    </div>
+
+                    <p>
+                        Share your preferred doctor, date, and time, and we will confirm the best available slot.
+                    </p>
+                </div>
+
+                <form class="appointment-form" action="#" method="post">
+
+                    <div class="appointment-field appointment-field--full">
+                        <label for="appointment-name">Full Name</label>
+                        <input type="text" id="appointment-name" name="fullName" placeholder="Enter your full name"
+                            autocomplete="name" required>
+                    </div>
+
+                    <div class="appointment-field">
+                        <label for="appointment-email">Email Address</label>
+                        <input type="email" id="appointment-email" name="email" placeholder="Enter your email"
+                            autocomplete="email" required>
+                    </div>
+
+                    <div class="appointment-field">
+                        <label for="appointment-phone">Phone Number</label>
+                        <input type="tel" id="appointment-phone" name="phoneNumber"
+                            placeholder="Enter your phone number" autocomplete="tel" required>
+                    </div>
+
+                    <div class="appointment-field">
+                        <label for="appointment-service">Select Service</label>
+                        <div class="appointment-select-wrap" data-appointment-select>
+                            <button class="appointment-select-button" type="button" aria-haspopup="listbox"
+                                aria-expanded="false">
+                                <span class="appointment-select-value">Choose a service</span>
+                                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+
+                            <select id="appointment-service" name="service" class="appointment-select-native" required
+                                aria-hidden="true" tabindex="-1">
+                                <option value="" selected disabled>Choose a service</option>
+                                <option value="cleaning">Dental Cleaning</option>
+                                <option value="whitening">Teeth Whitening</option>
+                                <option value="root-canal">Root Canal</option>
+                                <option value="implants">Dental Implants</option>
+                                <option value="braces">Braces & Aligners</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+
+                            <div class="appointment-select-menu" role="listbox" aria-label="Select service"></div>
+                        </div>
+                    </div>
+
+                    <div class="appointment-field">
+                        <label for="appointment-doctor">Select Doctor</label>
+                        <div class="appointment-select-wrap" data-appointment-select>
+                            <button class="appointment-select-button" type="button" aria-haspopup="listbox"
+                                aria-expanded="false">
+                                <span class="appointment-select-value">Choose a doctor</span>
+                                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+
+                            <select id="appointment-doctor" name="doctor" class="appointment-select-native" required
+                                aria-hidden="true" tabindex="-1">
+                                <option value="" selected disabled>Choose a doctor</option>
+                                <option value="dr-neha-sharma">Dr. Neha Sharma</option>
+                                <option value="dr-arjun-mehta">Dr. Arjun Mehta</option>
+                                <option value="dr-sana-khan">Dr. Sana Khan</option>
+                                <option value="dr-vikram-iyer">Dr. Vikram Iyer</option>
+                            </select>
+
+                            <div class="appointment-select-menu" role="listbox" aria-label="Select doctor"></div>
+                        </div>
+                    </div>
+
+                    <div class="appointment-field">
+                        <label for="appointment-date">Preferred Date</label>
+                        <input type="date" id="appointment-date" name="preferredDate" required>
+                    </div>
+
+                    <div class="appointment-field">
+                        <label for="appointment-time">Preferred Time</label>
+                        <input type="time" id="appointment-time" name="preferredTime" required>
+                    </div>
+
+                    <div class="appointment-field appointment-field--full">
+                        <label for="appointment-notes">Additional Notes</label>
+                        <textarea id="appointment-notes" name="notes" rows="5"
+                            placeholder="Share any symptoms, preferences, or special requests"></textarea>
+                    </div>
+
+                    <div class="appointment-submit-wrap appointment-field--full">
+                        <button class="appointment-submit" type="submit">
+                            <span>Book Appointment</span>
+                            <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                        </button>
+
+                        <p class="appointment-submit-note">
+                            We respect your time and will contact you with confirmation as soon as possible.
+                        </p>
+                    </div>
+
+                </form>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>SmileCare Dental</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="SmileCare Dental provides professional dental care including cleaning, fillings, braces, implants, teeth whitening and complete oral healthcare.">
+
+    <meta name="keywords"
+        content="Dental Clinic, Dentist, Teeth Whitening, Braces, Dental Implants, Root Canal, SmileCare Dental">
+
+    <meta name="author" content="SmileCare Dental">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- AOS Animation -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--==============================
+    Header Start
+===============================-->
+
+    <header class="header" id="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!--========== Logo ==========-->
+
+                <a href="index.html" class="logo">
+
+                    <img src="images/logo.png" alt="SmileCare Dental Logo">
+
+                </a>
+
+                <!--========== Desktop Menu ==========-->
+
+                <ul class="nav-menu">
+
+                    <li class="nav-item dropdown">
+
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="our-clinic.html">Our Clinic</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!--========== Right Side ==========-->
+
+                <div class="nav-right">
+
+                    <!-- Dark Mode -->
+
+                    <button class="nav-icon-btn" id="theme-toggle">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <!-- RTL -->
+
+                    <button class="nav-icon-btn" id="rtl-toggle">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <!-- Login -->
+
+                    <a href="login.html" class="login-btn">
+
+                        Login
+
+                    </a>
+
+                    <!-- CTA -->
+
+                    <a href="book-appointment.html" class="appointment-btn">
+
+                        Book Appointment
+
+                    </a>
+
+                    <!-- Mobile Toggle -->
+
+                    <button class="menu-toggle" id="menu-toggle">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!--==============================
+    Mobile Sidebar
+===============================-->
+
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-menu">
+
+        <div class="mobile-header">
+
+            <a href="index.html" class="mobile-logo">
+
+                <img src="images/logo.png" alt="SmileCare Dental Logo">
+
+            </a>
+
+            <button class="close-menu">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <ul class="mobile-nav">
+
+            <li class="mobile-dropdown">
+
+                <button class="mobile-dropdown-btn">
+
+                    Home
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <ul class="mobile-submenu">
+
+                    <li><a href="index.html">Home 1</a></li>
+
+                    <li><a href="home-2.html">Home 2</a></li>
+
+                </ul>
+
+            </li>
+
+            <li>
+
+                <a href="about.html">
+
+                    About
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="services.html">
+
+                    Services
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="our-clinic.html">
+
+                    Our Clinic
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="mobile-toggles">
+
+            <button class="nav-icon-btn" id="mobile-theme-toggle" type="button" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="nav-icon-btn" id="mobile-rtl-toggle" type="button" aria-label="Toggle RTL mode">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+        </div>
+
+        <div class="mobile-buttons">
+
+            <a href="login.html" class="mobile-login">
+
+                Login
+
+            </a>
+
+            <a href="#" class="mobile-book">
+
+                Book Appointment
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <section class="page-banner ourclinic-banner">
+        <div class="page-banner-overlay"></div>
+
+        <div class="container">
+            <div class="page-banner-content">
+                <h1>Our Clinic</h1>
+
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Our Clinic</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!--=====================================
+    Welcome To Our Clinic Start
+======================================-->
+
+    <section class="clinic-intro section-padding">
+
+        <div class="container">
+
+            <div class="clinic-intro-wrapper">
+
+                <!-- Left Image -->
+
+                <div class="clinic-intro-image">
+
+                    <img src="images/clinic-intro.jpg" alt="SmileCare Dental Clinic">
+
+                    <div class="clinic-badge">
+                        <i class="fa-solid fa-hospital"></i>
+                        <span>Modern Dental Facility</span>
+                    </div>
+
+                </div>
+
+                <!-- Right Content -->
+
+                <div class="clinic-intro-content">
+
+                    <span class="section-kicker">
+                        Welcome To SmileCare
+                    </span>
+
+                    <h2>
+                        Experience Modern Dentistry In A Comfortable & Caring Environment
+                    </h2>
+
+                    <p>
+                        At SmileCare Dental, we've created a welcoming environment where
+                        advanced technology meets compassionate care. Every detail of our
+                        clinic is designed to ensure comfort, safety, and an exceptional
+                        patient experience from the moment you walk in.
+                    </p>
+
+                    <div class="clinic-features">
+
+                        <div class="clinic-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Modern Reception Lounge</span>
+                        </div>
+
+                        <div class="clinic-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Advanced Digital Equipment</span>
+                        </div>
+
+                        <div class="clinic-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Private Treatment Rooms</span>
+                        </div>
+
+                        <div class="clinic-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Highest Sterilization Standards</span>
+                        </div>
+
+                        <div class="clinic-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Friendly & Experienced Team</span>
+                        </div>
+
+                        <div class="clinic-feature">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Comfortable Patient Experience</span>
+                        </div>
+
+                    </div>
+
+                    <a href="book-appointment.html" class="btn-primary">
+                        Book Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+    Welcome To Our Clinic End
+======================================-->
+
+    <!--=====================================
+    Modern Facilities Start
+======================================-->
+
+    <section class="clinic-facilities section-padding">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-kicker">
+                    Our Facilities
+                </span>
+
+                <h2>
+                    Designed For Comfort, Safety & Excellence
+                </h2>
+
+                <p>
+                    Every space within our clinic has been thoughtfully designed to
+                    provide a relaxing environment while supporting advanced dental
+                    treatments with modern technology.
+                </p>
+
+            </div>
+
+            <!-- Facility 1 -->
+
+            <div class="facility-row">
+
+                <div class="facility-image">
+                    <img src="images/facility-1.jpg" alt="Reception Lounge">
+                </div>
+
+                <div class="facility-content">
+
+                    <span>Reception Lounge</span>
+
+                    <h3>Warm & Comfortable Waiting Area</h3>
+
+                    <p>
+                        Enjoy a welcoming reception designed to help you relax before
+                        your appointment with comfortable seating and a calming
+                        atmosphere.
+                    </p>
+
+                    <div class="facility-highlights">
+                        <div class="facility-highlight">
+                            <strong>01</strong>
+                            <span>Quiet seating zones that keep the waiting experience calm.</span>
+                        </div>
+                        <div class="facility-highlight">
+                            <strong>02</strong>
+                            <span>Soft lighting and open sight lines for a lighter feel.</span>
+                        </div>
+                        <div class="facility-highlight">
+                            <strong>03</strong>
+                            <span>Easy check-in flow that keeps the visit moving smoothly.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Facility 2 -->
+
+            <div class="facility-row reverse">
+
+                <div class="facility-image">
+                    <img src="images/facility-2.jpg" alt="Treatment Room">
+                </div>
+
+                <div class="facility-content">
+
+                    <span>Treatment Rooms</span>
+
+                    <h3>Private & Fully Equipped Spaces</h3>
+
+                    <p>
+                        Every treatment room features advanced dental equipment,
+                        ergonomic patient chairs, and a hygienic environment for
+                        comfortable care.
+                    </p>
+
+                    <div class="facility-highlights">
+                        <div class="facility-highlight">
+                            <strong>01</strong>
+                            <span>Private treatment bays that protect comfort and privacy.</span>
+                        </div>
+                        <div class="facility-highlight">
+                            <strong>02</strong>
+                            <span>Ergonomic chairs and smart positioning for a relaxed visit.</span>
+                        </div>
+                        <div class="facility-highlight">
+                            <strong>03</strong>
+                            <span>Sterile workflow details designed to keep every room ready.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Facility 3 -->
+
+            <div class="facility-row">
+
+                <div class="facility-image">
+                    <img src="images/facility-3.jpg" alt="Digital Technology">
+                </div>
+
+                <div class="facility-content">
+
+                    <span>Advanced Technology</span>
+
+                    <h3>Modern Digital Dentistry</h3>
+
+                    <p>
+                        Our clinic uses digital imaging and precision equipment to
+                        deliver accurate diagnoses and efficient treatment planning.
+                    </p>
+
+                    <div class="facility-highlights">
+                        <div class="facility-highlight">
+                            <strong>01</strong>
+                            <span>Digital imaging that helps us see details with greater clarity.</span>
+                        </div>
+                        <div class="facility-highlight">
+                            <strong>02</strong>
+                            <span>Precision planning that supports faster, more confident decisions.</span>
+                        </div>
+                        <div class="facility-highlight">
+                            <strong>03</strong>
+                            <span>Streamlined workflows that make visits smoother for patients.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+    Modern Facilities End
+======================================-->
+
+    <!--=====================================
+    Advanced Technology Start
+======================================-->
+
+    <section class="technology-section section-padding">
+
+        <div class="container">
+
+            <div class="technology-wrapper">
+
+                <!-- Content -->
+
+                <div class="technology-content">
+
+                    <span class="section-kicker">
+                        Advanced Technology
+                    </span>
+
+                    <h2>
+                        Modern Equipment For Accurate & Comfortable Treatment
+                    </h2>
+
+                    <p>
+                        We invest in the latest dental technology to provide precise
+                        diagnosis, minimally invasive procedures, and faster recovery,
+                        ensuring every patient receives the highest standard of care.
+                    </p>
+
+                    <div class="technology-list">
+
+                        <div class="technology-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Digital X-Ray</h4>
+                                <p>Low-radiation imaging with instant results.</p>
+                            </div>
+                        </div>
+
+                        <div class="technology-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Intraoral Camera</h4>
+                                <p>High-definition imaging for accurate diagnosis.</p>
+                            </div>
+                        </div>
+
+                        <div class="technology-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Laser Dentistry</h4>
+                                <p>Comfortable procedures with faster healing.</p>
+                            </div>
+                        </div>
+
+                        <div class="technology-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Sterilization System</h4>
+                                <p>Maintaining the highest hygiene standards.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Image -->
+
+                <div class="technology-image">
+
+                    <img src="images/dental-technology.jpg" alt="Advanced Dental Technology">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+    Advanced Technology End
+======================================-->
+
+    <!--=====================================
+    Patient Comfort & Safety Start
+======================================-->
+
+    <section class="comfort-section section-padding">
+
+        <div class="container">
+
+            <div class="comfort-wrapper">
+
+                <div class="comfort-content">
+
+                    <span class="section-kicker">
+                        Patient Comfort & Safety
+                    </span>
+
+                    <h2>
+                        Your Comfort, Health & Safety Are Always Our Priority
+                    </h2>
+
+                    <p>
+                        From the moment you arrive until your treatment is complete,
+                        we focus on providing a clean, relaxing, and stress-free
+                        experience using the highest standards of hygiene and modern care.
+                    </p>
+
+                    <a href="book-appointment.html" class="btn-primary">
+                        Schedule Your Visit
+                    </a>
+
+                </div>
+
+                <div class="comfort-features">
+
+                    <div class="comfort-box">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <h4>Sterilized Equipment</h4>
+                    </div>
+
+                    <div class="comfort-box">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <h4>Experienced Dentists</h4>
+                    </div>
+
+                    <div class="comfort-box">
+                        <i class="fa-solid fa-wheelchair"></i>
+                        <h4>Accessible Clinic</h4>
+                    </div>
+
+                    <div class="comfort-box">
+                        <i class="fa-solid fa-heart-circle-check"></i>
+                        <h4>Patient-Centered Care</h4>
+                    </div>
+
+                    <div class="comfort-box">
+                        <i class="fa-solid fa-soap"></i>
+                        <h4>Strict Hygiene</h4>
+                    </div>
+
+                    <div class="comfort-box">
+                        <i class="fa-solid fa-headset"></i>
+                        <h4>Friendly Support</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+    Patient Comfort & Safety End
+======================================-->
+
+
+    <!--=====================================
+    Clinic Tour Video Start
+======================================-->
+
+    <section class="clinic-tour section-padding">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-kicker">
+                    Virtual Clinic Tour
+                </span>
+
+                <h2>
+                    Step Inside SmileCare Dental
+                </h2>
+
+                <p>
+                    Discover our welcoming environment, advanced treatment rooms, and
+                    state-of-the-art dental technology through a virtual tour of our
+                    modern clinic.
+                </p>
+
+            </div>
+
+            <div class="clinic-tour-wrapper">
+
+                <img src="images/clinic-tour.jpg" alt="Clinic Tour">
+
+                <div class="video-overlay">
+
+                    <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" class="video-play-btn" target="_blank">
+
+                        <i class="fa-solid fa-play"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+    Clinic Tour Video End
+======================================-->
+
+
+    <!--=====================================
+    Patient Experience Start
+======================================-->
+
+    <section class="patient-experience section-padding">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-kicker">
+                    Patient Experience
+                </span>
+
+                <h2>
+                    Your Journey At SmileCare
+                </h2>
+
+                <p>
+                    Every visit is carefully planned to provide a smooth, comfortable,
+                    and stress-free experience from your arrival to your successful treatment.
+                </p>
+
+            </div>
+
+            <div class="experience-wrapper">
+
+                <div class="experience-step">
+
+                    <div class="step-number">01</div>
+
+                    <h3>Warm Welcome</h3>
+
+                    <p>
+                        Our friendly team greets you and assists with a quick check-in process.
+                    </p>
+
+                </div>
+
+                <div class="experience-line"></div>
+
+                <div class="experience-step">
+
+                    <div class="step-number">02</div>
+
+                    <h3>Consultation</h3>
+
+                    <p>
+                        Our dentists carefully examine your oral health and explain every treatment option.
+                    </p>
+
+                </div>
+
+                <div class="experience-line"></div>
+
+                <div class="experience-step">
+
+                    <div class="step-number">03</div>
+
+                    <h3>Treatment</h3>
+
+                    <p>
+                        Advanced equipment and experienced professionals ensure comfortable care.
+                    </p>
+
+                </div>
+
+                <div class="experience-line"></div>
+
+                <div class="experience-step">
+
+                    <div class="step-number">04</div>
+
+                    <h3>Aftercare</h3>
+
+                    <p>
+                        We provide personalized guidance and follow-up support for long-lasting results.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+    Patient Experience End
+======================================-->
+
+
+    <!--=====================================
+    Book Appointment CTA Start
+======================================-->
+
+    <section class="clinic-cta section-padding">
+
+        <div class="container">
+
+            <div class="clinic-cta-wrapper">
+
+                <!-- Content -->
+
+                <div class="clinic-cta-content">
+
+                    <span class="section-kicker">
+                        Book Your Appointment
+                    </span>
+
+                    <h2>
+                        Your Healthy Smile Starts With One Appointment
+                    </h2>
+
+                    <p>
+                        Whether you need a routine dental check-up, cosmetic treatment,
+                        or emergency dental care, our experienced team is ready to
+                        provide personalized care in a modern and comfortable environment.
+                    </p>
+
+                    <div class="clinic-cta-btn">
+
+                        <a href="book-appointment.html" class="btn-primary">
+                            Book Appointment
+                        </a>
+
+                        <a href="contact.html" class="btn-secondary">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Image -->
+
+                <div class="clinic-cta-image">
+
+                    <img src="images/cta-doctor.png" alt="SmileCare Dentist">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=====================================
+    Book Appointment CTA End
+======================================-->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-wrapper">
+
+                <!-- Footer About -->
+
+                <div class="footer-about">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="SmileCare Dental">
+                    </a>
+
+                    <p>
+                        SmileCare Dental is dedicated to providing exceptional oral healthcare with advanced technology,
+                        experienced dentists, and personalized treatment for every patient.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="our-clinic.html">Our Clinic</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-contact">
+
+                    <h3>Contact</h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            Coimbatore, Tamil Nadu
+                        </li>
+
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +91 98765 43210
+                        </li>
+
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@smilecaredental.com
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Working Hours -->
+
+                <div class="footer-hours">
+
+                    <h3>Working Hours</h3>
+
+                    <ul>
+
+                        <li>Mon - Fri <span>09:00 AM - 08:00 PM</span></li>
+
+                        <li>Saturday <span>09:00 AM - 06:00 PM</span></li>
+
+                        <li>Sunday <span>Closed</span></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SmileCare Dental. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

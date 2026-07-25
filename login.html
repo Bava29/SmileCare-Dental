@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | SmileCare Dental</title>
+
+    <meta name="description"
+        content="Login to your SmileCare Dental account for a seamless appointment and patient experience.">
+
+    <meta name="author" content="SmileCare Dental">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="auth-page login-page">
+
+    <main class="auth-shell login-bg">
+
+        <div class="auth-tools" aria-label="Page controls">
+
+            <button class="nav-icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode"
+                aria-pressed="false">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+
+            <button class="nav-icon-btn" id="rtl-toggle" type="button" aria-label="Toggle RTL mode"
+                aria-pressed="false">
+                <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+            </button>
+
+        </div>
+
+        <section class="auth-card" aria-labelledby="login-heading">
+
+            <div class="auth-brand">
+                <a href="index.html" aria-label="SmileCare Dental home">
+                    <img src="images/logo.png" alt="SmileCare Dental">
+                </a>
+            </div>
+
+            <h1 class="auth-heading" id="login-heading">Sign In to Your Account</h1>
+
+            <p class="auth-description">
+                Access your patient dashboard, manage appointments, and continue your care journey with SmileCare
+                Dental.
+            </p>
+
+            <form class="auth-form" action="#" method="post">
+
+                <div class="auth-field">
+                    <label class="auth-label" for="login-email">Email Address</label>
+                    <input class="auth-input" type="email" id="login-email" name="email" placeholder="Enter your email"
+                        autocomplete="email" required>
+                </div>
+
+                <div class="auth-field auth-password">
+                    <label class="auth-label" for="login-password">Password</label>
+                    <div class="auth-password-wrap">
+                        <input class="auth-input" type="password" id="login-password" name="password"
+                            placeholder="Enter your password" autocomplete="current-password" required>
+                        <button class="auth-password-toggle" type="button" data-password-toggle
+                            data-target="login-password" aria-label="Show password">
+                            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="auth-options">
+
+                    <label class="auth-check" for="remember-me">
+                        <input type="checkbox" id="remember-me" name="remember">
+                        <span>Remember Me</span>
+                    </label>
+
+                    <a class="auth-link" href="#">Forgot Password?</a>
+
+                </div>
+
+                <button class="auth-submit" type="submit">Login</button>
+
+            </form>
+
+            <div class="auth-divider" aria-hidden="true">
+                <span>Continue With</span>
+            </div>
+
+            <div class="auth-social" aria-label="Social login options">
+
+                <a class="auth-social-btn google" href="#" aria-label="Continue with Google">
+                    <img src="images/google-logo.svg" alt="" aria-hidden="true">
+                </a>
+
+                <a class="auth-social-btn facebook" href="#" aria-label="Continue with Facebook">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+
+                <a class="auth-social-btn apple" href="#" aria-label="Continue with Apple">
+                    <i class="fa-brands fa-apple" aria-hidden="true"></i>
+                </a>
+
+                <a class="auth-social-btn x" href="#" aria-label="Continue with X">
+                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+            <p class="auth-bottom">
+                Don't have an account? <a href="register.html">Create Account</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
