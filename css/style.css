@@ -1761,6 +1761,13 @@ body:not(.dark-mode) .hero-btns .btn-secondary {
     color: var(--on-accent);
 }
 
+/* Ensure all blue CTA buttons keep white labels in light mode only. */
+body:not(.dark-mode) .appointment-btn,
+body:not(.dark-mode) .appointment-submit,
+body:not(.dark-mode) .home2-cta-btn {
+    color: var(--on-accent);
+}
+
 body:not(.dark-mode) .services-cta-buttons .secondary-btn,
 body:not(.dark-mode) .clinic-cta-btn .secondary-btn,
 body:not(.dark-mode) .services-cta .btn-secondary,
@@ -4882,10 +4889,30 @@ body.home-2-page .header .login-btn {
 
 body.home-2-page .header .menu-toggle {
     background: var(--surface);
+    border: 1px solid var(--border-color);
 }
 
 body.home-2-page .header .menu-toggle span {
     background: var(--surface-dark-2);
+}
+
+body.dark-mode.home-2-page .header .menu-toggle {
+    background: var(--surface-dark-2);
+    border: 1px solid var(--surface-border-light);
+}
+
+body.dark-mode.home-2-page .header .menu-toggle span {
+    background: var(--dark-text);
+}
+
+body.home-2-page .header .nav-item.dropdown>a.active,
+body.home-2-page .mobile-dropdown-btn.active {
+    color: var(--primary-1);
+}
+
+body.dark-mode.home-2-page .header .nav-item.dropdown>a.active,
+body.dark-mode.home-2-page .mobile-dropdown-btn.active {
+    color: var(--primary-1);
 }
 
 body.home-2-page .home2-section {
@@ -5970,6 +5997,70 @@ body.dark-mode.home-2-page .home2-hero-shape-2 {
 
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body.home-2-page .home2-clinic {
+        padding: 76px 0;
+    }
+
+    body.home-2-page .home2-clinic-layout {
+        grid-template-columns: minmax(0, 1.16fr) minmax(300px, .84fr);
+        gap: 18px;
+        align-items: stretch;
+    }
+
+    body.home-2-page .home2-clinic-gallery {
+        grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+        gap: 18px;
+    }
+
+    body.home-2-page .home2-clinic-side {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    body.home-2-page .home2-image-placeholder--clinic-large {
+        min-height: 380px;
+    }
+
+    body.home-2-page .home2-image-placeholder--clinic-small {
+        min-height: 180px;
+    }
+
+    body.home-2-page .home2-clinic-copy {
+        padding: 22px 22px;
+        gap: 12px;
+    }
+
+    body.home-2-page .home2-clinic-copy h3 {
+        font-size: 22px;
+        line-height: 1.24;
+    }
+
+    body.home-2-page .home2-clinic-copy p {
+        font-size: 15px;
+        line-height: 1.62;
+    }
+
+    body.home-2-page .home2-clinic-features {
+        gap: 10px;
+    }
+
+    body.home-2-page .home2-clinic-feature {
+        padding: 11px 12px;
+        gap: 10px;
+    }
+
+    body.home-2-page .home2-clinic-feature strong {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        font-size: 13px;
+    }
+
+}
+
 @media (max-width: 991px) {
 
     body.home-2-page .home2-section {
@@ -5977,7 +6068,7 @@ body.dark-mode.home-2-page .home2-hero-shape-2 {
     }
 
     body.home-2-page .home2-hero {
-        padding-top: 132px;
+        padding-top: 148px;
     }
 
     body.home-2-page .home2-hero-copy h1 {
@@ -6009,7 +6100,7 @@ body.dark-mode.home-2-page .home2-hero-shape-2 {
     }
 
     body.home-2-page .home2-hero {
-        padding-top: 118px;
+        padding-top: 164px;
     }
 
     body.home-2-page .home2-hero-grid {
@@ -7061,6 +7152,16 @@ body:not(.dark-mode) .service-detail-page .page-banner i {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(7),
+    .gallery-item:nth-child(8) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
     .gallery-large,
     .gallery-wide {
         grid-column: span 2;
@@ -7072,6 +7173,16 @@ body:not(.dark-mode) .service-detail-page .page-banner i {
 
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(7),
+    .gallery-item:nth-child(8) {
+        grid-column: auto;
+        grid-row: auto;
     }
 
     .gallery-large,
@@ -7347,6 +7458,16 @@ body:not(.dark-mode) .service-detail-page .page-banner i {
     display: block;
 }
 
+body:not(.dark-mode) .cta-content .section-kicker,
+body:not(.dark-mode) .about-cta-content .section-kicker,
+body:not(.dark-mode) .services-cta-content .section-kicker,
+body:not(.dark-mode) .clinic-cta-content .section-kicker,
+body:not(.dark-mode) .home2-cta-content .section-kicker {
+    background: rgba(255, 255, 255, .82);
+    border-color: rgba(15, 23, 42, .10);
+    color: var(--black);
+}
+
 @media(max-width:991px) {
 
     .about-cta-wrapper {
@@ -7528,7 +7649,7 @@ body:not(.dark-mode) .service-detail-page .page-banner i {
     display: block;
 }
 
-.facility-content > span {
+.facility-content>span {
     display: inline-block;
     color: var(--primary-1);
     font-weight: 700;
@@ -7791,6 +7912,16 @@ body:not(.dark-mode) .service-detail-page .page-banner i {
     color: var(--on-accent);
     margin: 0;
     font-size: 20px;
+}
+
+body:not(.dark-mode) .comfort-content .section-kicker {
+    background: rgba(255, 255, 255, .84);
+    border-color: rgba(255, 255, 255, .28);
+    color: var(--black);
+}
+
+body:not(.dark-mode) .comfort-box i {
+    color: var(--white);
 }
 
 @media(max-width:991px) {
@@ -8568,11 +8699,25 @@ body.service-detail-page .nav-right {
     gap: 12px;
 }
 
-body.service-detail-page .nav-menu,
-body.service-detail-page .menu-toggle,
-body.service-detail-page .login-btn,
-body.service-detail-page .appointment-btn {
-    display: none;
+@media (min-width: 992px) {
+
+    body.service-detail-page .navbar {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+        column-gap: 28px;
+    }
+
+    body.service-detail-page .nav-menu {
+        justify-self: center;
+        width: max-content;
+    }
+
+    body.service-detail-page .nav-right {
+        margin-left: 0;
+        justify-self: end;
+    }
+
 }
 
 body.service-detail-page .nav-icon-btn {
@@ -8902,6 +9047,12 @@ body.dark-mode.service-detail-page .service-overview-media img {
     box-shadow: 0 24px 60px rgba(var(--overlay-rgb), .28);
 }
 
+body:not(.dark-mode).home-2-page .home2-floating-icon,
+body:not(.dark-mode).home-2-page .home2-floating-icon i,
+body:not(.dark-mode).service-detail-page .service-overview-list i {
+    color: var(--primary-2);
+}
+
 body.dark-mode.service-detail-page .service-overview-media .experience-box {
     box-shadow: 0 20px 50px rgba(var(--overlay-rgb), .24);
 }
@@ -9011,7 +9162,7 @@ body.dark-mode.service-detail-page .service-overview-media .experience-box {
     RESPONSIVE SAFETY NET
 ==================================*/
 
-body :where(.about-grid, .about-feature-grid, .services-grid, .choose-grid, .facts-grid, .gallery-section .gallery-split-grid, .gallery-section .gallery-split-card, .contact-info-grid, .form-row, .our-story-wrapper, .story-info, .clinic-intro-wrapper, .clinic-features, .team-grid, .values-grid, .achievement-grid, .gallery-grid, .awards-grid, .home2-hero-grid, .home2-process-grid, .home2-treatment-grid, .home2-clinic-side, .home2-blog-grid, .appointment-layout, .appointment-highlights, .service-overview-grid, .service-overview-actions, .service-faq-accordion) > * {
+body :where(.about-grid, .about-feature-grid, .services-grid, .choose-grid, .facts-grid, .gallery-section .gallery-split-grid, .gallery-section .gallery-split-card, .contact-info-grid, .form-row, .our-story-wrapper, .story-info, .clinic-intro-wrapper, .clinic-features, .team-grid, .values-grid, .achievement-grid, .gallery-grid, .awards-grid, .home2-hero-grid, .home2-process-grid, .home2-treatment-grid, .home2-clinic-side, .home2-blog-grid, .appointment-layout, .appointment-highlights, .service-overview-grid, .service-overview-actions, .service-faq-accordion)>* {
     min-width: 0;
 }
 
@@ -9070,7 +9221,390 @@ body :where(p, li, .section-description, .page-banner p, .about-content p, .abou
 
 }
 
+/****************************BUgs*****************************/
+
+.service-card {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    transition: .4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-image {
+    height: 240px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    display: block;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.08);
+}
+
+.service-content {
+    padding: 28px;
+}
+
+.service-content h3 {
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+
+/*==================================
+    GALLERY OVERLAY
+==================================*/
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 34px;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, .82) 0%,
+            rgba(0, 0, 0, .52) 35%,
+            rgba(0, 0, 0, .18) 60%,
+            rgba(0, 0, 0, 0) 100%);
+    transition: .35s ease;
+}
+
+.gallery-overlay h4 {
+    color: #fff !important;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, .8),
+        0 4px 20px rgba(0, 0, 0, .9);
+}
 
 
 
 
+/* Facebook */
+
+.auth-social-btn.facebook i {
+    color: #1877F2 !important;
+}
+
+.auth-social-btn.facebook:hover {
+    background: #1877F2 !important;
+    border-color: #1877F2 !important;
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(24, 119, 242, .35) !important;
+}
+
+.auth-social-btn.facebook:hover i {
+    color: #fff !important;
+}
+
+/* Apple */
+
+.auth-social-btn.apple i {
+    color: #000000 !important;
+}
+
+.auth-social-btn.apple:hover {
+    background: #000000 !important;
+    border-color: #000000 !important;
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .30) !important;
+}
+
+.auth-social-btn.apple:hover i {
+    color: #ffffff !important;
+}
+
+/* X (Twitter) */
+
+.auth-social-btn.x i {
+    color: #000000 !important;
+}
+
+.auth-social-btn.x:hover {
+    background: #000000 !important;
+    border-color: #000000 !important;
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .30) !important;
+}
+
+.auth-social-btn.x:hover i {
+    color: #ffffff !important;
+}
+
+/* Google */
+
+.auth-social-btn.google:hover {
+    transform: translateY(-6px);
+    border-color: #4285F4 !important;
+    box-shadow: 0 18px 35px rgba(66, 133, 244, .30) !important;
+}
+
+/* Dark Mode */
+
+body.dark-mode .auth-social-btn {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .auth-social-btn.facebook i {
+    color: #1877F2 !important;
+}
+
+body.dark-mode .auth-social-btn.apple i,
+body.dark-mode .auth-social-btn.x i {
+    color: #FFFFFF !important;
+}
+
+
+/*==================================================
+    MOBILE SIDEBAR - HOME MENU CONTRAST FIX
+==================================================*/
+
+@media (max-width:991px) {
+
+    .mobile-menu .mobile-nav>li>a,
+    .mobile-menu .mobile-nav>li>.mobile-dropdown-btn {
+        color: var(--black) !important;
+        opacity: 1 !important;
+    }
+
+    .mobile-menu .mobile-nav>li>a:hover,
+    .mobile-menu .mobile-nav>li>.mobile-dropdown-btn:hover {
+        color: var(--primary-1) !important;
+    }
+
+    .mobile-menu .mobile-nav>li>a.active,
+    .mobile-menu .mobile-nav>li>.mobile-dropdown-btn.active,
+    .mobile-menu .mobile-nav>li.mobile-dropdown.active>.mobile-dropdown-btn {
+        color: var(--primary-1) !important;
+        font-weight: 700 !important;
+    }
+
+    .mobile-menu .mobile-dropdown-btn i {
+        color: inherit !important;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode .mobile-menu .mobile-nav>li>a,
+body.dark-mode .mobile-menu .mobile-nav>li>.mobile-dropdown-btn {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .mobile-menu .mobile-nav>li>a.active,
+body.dark-mode .mobile-menu .mobile-nav>li>.mobile-dropdown-btn.active,
+body.dark-mode .mobile-menu .mobile-nav>li.mobile-dropdown.active>.mobile-dropdown-btn {
+    color: var(--primary-1) !important;
+}
+
+/*==================================================
+    iPad Mini - Center Last Facility Card
+==================================================*/
+
+@media only screen and (min-width: 768px) and (max-width: 820px) {
+
+    .facility-highlights {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+    }
+
+    .facility-highlights .facility-highlight:nth-child(3) {
+        grid-column: 1 / -1 !important;
+        justify-self: center !important;
+        width: min(100%, 320px) !important;
+        max-width: 320px !important;
+    }
+
+}
+
+/*========================================
+   MOBILE HERO TOP SPACING - STRONG OVERRIDE
+=========================================*/
+
+@media only screen and (max-width: 767px) {
+
+    body.home-2-page .home2-hero {
+        padding-top: 115px !important;
+    }
+
+    body.home-2-page .home2-hero .container {
+        padding-top: 0 !important;
+    }
+
+}
+
+/*========================================
+    HOME 2 HERO TOP SPACING
+    iPad Pro / Tablets
+=========================================*/
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    body.home-2-page .home2-hero {
+        padding-top: 135px !important;
+    }
+
+    body.home-2-page .home2-hero .container {
+        padding-top: 0 !important;
+    }
+
+}
+
+
+/*==================================================
+    HOME 2 BLOG - CENTER LAST CARD
+    iPad Mini / iPad Air / iPad Pro
+==================================================*/
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+
+    .home2-blog-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 30px !important;
+    }
+
+    .home2-blog-grid .home2-blog-card:last-child {
+        grid-column: 1 / -1 !important;
+        justify-self: center !important;
+        width: 100% !important;
+        max-width: 480px !important;
+    }
+
+}
+
+
+/*==================================================
+    GLOBAL PRIMARY BUTTON TEXT - WHITE
+    STRONG OVERRIDE
+==================================================*/
+
+.appointment-btn,
+.mobile-book,
+.auth-submit,
+.btn-primary,
+.hero-btns .btn-primary,
+.home2-hero-actions .btn-primary,
+.home2-btn-primary,
+.primary-btn,
+.primary-button,
+.gradient-btn,
+.cta-btn,
+.book-btn,
+.submit-btn,
+a[class*="btn-primary"],
+button[class*="btn-primary"] {
+    color: #FFFFFF !important;
+}
+
+.appointment-btn *,
+.mobile-book *,
+.auth-submit *,
+.btn-primary *,
+.hero-btns .btn-primary *,
+.home2-hero-actions .btn-primary *,
+.home2-btn-primary *,
+.primary-btn *,
+.primary-button *,
+.gradient-btn *,
+.cta-btn *,
+.book-btn *,
+.submit-btn * {
+    color: #FFFFFF !important;
+}
+
+.appointment-btn:hover,
+.mobile-book:hover,
+.auth-submit:hover,
+.btn-primary:hover,
+.hero-btns .btn-primary:hover,
+.home2-hero-actions .btn-primary:hover,
+.home2-btn-primary:hover,
+.primary-btn:hover,
+.primary-button:hover,
+.gradient-btn:hover,
+.cta-btn:hover,
+.book-btn:hover,
+.submit-btn:hover {
+    color: #FFFFFF !important;
+}
+
+.appointment-btn:hover *,
+.mobile-book:hover *,
+.auth-submit:hover *,
+.btn-primary:hover *,
+.hero-btns .btn-primary:hover *,
+.home2-hero-actions .btn-primary:hover *,
+.home2-btn-primary:hover *,
+.primary-btn:hover *,
+.primary-button:hover *,
+.gradient-btn:hover *,
+.cta-btn:hover *,
+.book-btn:hover *,
+.submit-btn:hover * {
+    color: #FFFFFF !important;
+}
+
+/*==================================
+    ABOUT PAGE TIMELINE YEAR
+==================================*/
+
+.timeline-year,
+.timeline-content .timeline-year,
+.timeline-item .timeline-year {
+    color: #FFFFFF !important;
+}
+
+.timeline-year *,
+.timeline-content .timeline-year *,
+.timeline-item .timeline-year * {
+    color: #FFFFFF !important;
+}
+
+
+/*==================================
+    FORCE WHITE ICONS (LIGHT MODE)
+==================================*/
+
+body:not(.dark-mode) .floating-box i,
+body:not(.dark-mode) .why-item i,
+body:not(.dark-mode) .clinic-feature i,
+body:not(.dark-mode) .technology-item i,
+body:not(.dark-mode) .clinic-badge i,
+body:not(.dark-mode).service-detail-page .floating-box,
+body:not(.dark-mode).service-detail-page .floating-box h4,
+body:not(.dark-mode).service-detail-page .floating-box span,
+body:not(.dark-mode) .process-number,
+body:not(.dark-mode) .process-number *,
+body:not(.dark-mode) .floating-box i::before,
+body:not(.dark-mode) .why-item i::before,
+body:not(.dark-mode) .clinic-feature i::before,
+body:not(.dark-mode) .technology-item i::before,
+body:not(.dark-mode) .clinic-badge i::before {
+    color: #FFFFFF !important;
+}
