@@ -27,6 +27,45 @@
                 <a href="index.html" class="logo" aria-label="SmileCare Dental home">
                     <img src="images/logo.png" alt="SmileCare Dental Logo">
                 </a>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="services.html">
+                            Services
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="general-dentistry.html">General Dentistry</a></li>
+                            <li><a href="teeth-whitening.html">Teeth Whitening</a></li>
+                            <li><a href="dental-implants.html">Dental Implants</a></li>
+                            <li><a href="orthodontics.html">Orthodontics</a></li>
+                            <li><a href="pediatric-dentistry.html">Pediatric Dentistry</a></li>
+                            <li><a href="root-canal-treatment.html">Root Canal Treatment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="our-clinic.html">Our Clinic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
                 <div class="nav-right" aria-label="Page controls">
                     <button class="nav-icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode"
                         aria-pressed="false">
@@ -36,10 +75,84 @@
                         aria-pressed="false">
                         <i class="fa-solid fa-right-left" aria-hidden="true"></i>
                     </button>
+                    <a href="login.html" class="login-btn">
+                        Login
+                    </a>
+                    <a href="book-appointment.html" class="appointment-btn">
+                        Book Appointment
+                    </a>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </nav>
         </div>
     </header>
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-header">
+            <a href="index.html" class="mobile-logo">
+                <img src="images/logo.png" alt="SmileCare Dental Logo">
+            </a>
+            <button class="close-menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav">
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-btn">
+                    Services
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="mobile-submenu">
+                    <li><a href="general-dentistry.html">General Dentistry</a></li>
+                    <li><a href="teeth-whitening.html">Teeth Whitening</a></li>
+                    <li><a href="dental-implants.html">Dental Implants</a></li>
+                    <li><a href="orthodontics.html">Orthodontics</a></li>
+                    <li><a href="pediatric-dentistry.html">Pediatric Dentistry</a></li>
+                    <li><a href="root-canal-treatment.html">Root Canal Treatment</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="our-clinic.html">
+                    Our Clinic
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <div class="mobile-toggles">
+            <button class="nav-icon-btn" id="mobile-theme-toggle" type="button" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="nav-icon-btn" id="mobile-rtl-toggle" type="button" aria-label="Toggle RTL mode">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+        </div>
+        <div class="mobile-buttons">
+            <a href="login.html" class="mobile-login">
+                Login
+            </a>
+            <a href="book-appointment.html" class="mobile-book">
+                Book Appointment
+            </a>
+        </div>
+    </div>
 
     <main>
         <section class="page-banner">
@@ -91,7 +204,7 @@
                                 </div>
                                 <div>
                                     <h3>Accurate Diagnosis</h3>
-                                    <p>We confirm the issue quickly so treatment starts without unnecessary delay.</p>
+                                    <p>We confirm the issue quickly so treatment starts without any over delay.</p>
                                 </div>
                             </article>
 
