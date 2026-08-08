@@ -37,6 +37,7 @@
     --text-subtle-rgb: 148, 163, 184;
     --dark-text-rgb: 248, 250, 252;
     --on-accent-rgb: 255, 255, 255;
+    --on-accent: #FFFFFF;
     --shadow-rgb: 15, 23, 42;
     --overlay-rgb: 0, 0, 0;
     --accent-soft: rgba(14, 165, 233, .10);
@@ -2005,13 +2006,16 @@ body:not(.dark-mode) .header:not(.active) .login-btn {
 }
 
 .service-card {
-    padding: 32px 28px;
-    border-radius: 28px;
+    padding: 24px 24px;
+    border-radius: 24px;
     background: var(--surface);
     border: 1px solid var(--border-color);
     box-shadow: 0 16px 40px rgba(var(--shadow-rgb), .06);
     transition: .35s ease;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .service-card:hover {
@@ -2020,27 +2024,27 @@ body:not(.dark-mode) .header:not(.active) .login-btn {
 }
 
 .service-icon {
-    width: 68px;
-    height: 68px;
-    border-radius: 22px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
     background: rgba(14, 165, 233, .10);
     color: var(--primary-1);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    margin-bottom: 22px;
+    font-size: 22px;
+    margin-bottom: 18px;
 }
 
 .service-card h3 {
-    font-size: 22px;
-    margin-bottom: 12px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .service-card p {
     color: rgba(var(--text-rgb), .72);
-    line-height: 1.8;
-    margin-bottom: 22px;
+    line-height: 1.7;
+    margin-bottom: 16px;
 }
 
 .service-link {
@@ -2446,17 +2450,17 @@ body:not(.dark-mode) .header:not(.active) .login-btn {
 }
 
 .cta-content .section-kicker {
-    background: rgba(var(--on-accent-rgb), .14);
-    border-color: rgba(var(--surface-rgb), .18);
-    color: var(--on-accent);
+    background: rgba(255, 255, 255, .16);
+    border-color: rgba(255, 255, 255, .28);
+    color: #FFFFFF;
 }
 
 .cta-content h2 {
-    color: var(--on-accent);
+    color: #FFFFFF;
 }
 
 .cta-content .section-description {
-    color: rgba(var(--on-accent-rgb), .84);
+    color: rgba(255, 255, 255, .95);
     max-width: 680px;
 }
 
@@ -9607,4 +9611,1100 @@ body:not(.dark-mode) .clinic-feature i::before,
 body:not(.dark-mode) .technology-item i::before,
 body:not(.dark-mode) .clinic-badge i::before {
     color: #FFFFFF !important;
+}
+
+/*==================================================
+    HOME PAGE - OUR DENTAL SERVICES
+    Strong Card Height + Equal Internal Padding Override
+==================================================*/
+
+body:not(.dark-mode) .services-section .service-card,
+body.dark-mode .services-section .service-card {
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+}
+
+/* Reduce image height */
+.services-section .service-card .service-image {
+    height: 210px !important;
+    min-height: 210px !important;
+    flex-shrink: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Keep images properly fitted */
+.services-section .service-card .service-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Equal internal spacing for every card */
+.services-section .service-card .service-content {
+    padding: 22px 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+}
+
+/* Heading spacing */
+.services-section .service-card .service-content h3 {
+    margin: 0 0 10px !important;
+    line-height: 1.3 !important;
+}
+
+/* Description spacing */
+.services-section .service-card .service-content p {
+    margin: 0 0 16px !important;
+    line-height: 1.6 !important;
+}
+
+/* Keep Learn More aligned consistently */
+.services-section .service-card .service-content .service-link {
+    margin-top: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+/* Equal card height within each grid row */
+.services-section .services-grid {
+    align-items: stretch !important;
+}
+
+.services-section .service-card {
+    align-self: stretch !important;
+}
+
+
+/*==================================================
+    TABLET
+==================================================*/
+
+@media (max-width: 991px) {
+
+    .services-section .service-card .service-image {
+        height: 200px !important;
+        min-height: 200px !important;
+    }
+
+    .services-section .service-card .service-content {
+        padding: 20px 22px !important;
+    }
+
+}
+
+
+/*==================================================
+    MOBILE
+==================================================*/
+
+@media (max-width: 767px) {
+
+    .services-section .service-card .service-image {
+        height: 190px !important;
+        min-height: 190px !important;
+    }
+
+    .services-section .service-card .service-content {
+        padding: 20px !important;
+    }
+
+    .services-section .service-card .service-content h3 {
+        margin-bottom: 8px !important;
+    }
+
+    .services-section .service-card .service-content p {
+        margin-bottom: 14px !important;
+        line-height: 1.55 !important;
+    }
+
+}
+
+
+/*==================================================
+    SMALL MOBILE
+==================================================*/
+
+@media (max-width: 480px) {
+
+    .services-section .service-card .service-image {
+        height: 175px !important;
+        min-height: 175px !important;
+    }
+
+    .services-section .service-card .service-content {
+        padding: 18px !important;
+    }
+
+}
+
+/*==================================================
+    HOME 1 - FINAL CTA
+    LIGHT MODE TEXT CONTRAST FIX
+    STRONG OVERRIDE
+==================================================*/
+
+body:not(.dark-mode) .cta-section .cta-panel {
+    position: relative !important;
+}
+
+/* CTA description - readable dark text */
+body:not(.dark-mode) .cta-section .cta-content .section-description {
+    color: #1E293B !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+
+/* CTA kicker */
+body:not(.dark-mode) .cta-section .cta-content .section-kicker {
+    background: rgba(255, 255, 255, .90) !important;
+    border: 1px solid rgba(15, 23, 42, .12) !important;
+    color: #0F172A !important;
+    font-weight: 800 !important;
+}
+
+/* CTA button */
+body:not(.dark-mode) .cta-section .cta-btn {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 1px solid rgba(15, 23, 42, .10) !important;
+    font-weight: 800 !important;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, .18) !important;
+}
+
+/* Button hover */
+body:not(.dark-mode) .cta-section .cta-btn:hover {
+    background: #F8FAFC !important;
+    color: #0F172A !important;
+    border-color: rgba(15, 23, 42, .16) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 18px 36px rgba(15, 23, 42, .22) !important;
+}
+
+
+/*==================================================
+    KEEP DARK MODE UNCHANGED
+==================================================*/
+
+body.dark-mode .cta-section .cta-content h2 {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .cta-section .cta-content .section-description {
+    color: rgba(255, 255, 255, .95) !important;
+}
+
+body.dark-mode .cta-section .cta-content .section-kicker {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .cta-section .cta-btn {
+    color: var(--primary-1) !important;
+}
+
+/*==================================================
+    HOME 2 - OUR MODERN CLINIC
+    FULL CONTAINER IMAGE FIT
+    NO EMPTY SPACE - NO DISTORTION
+==================================================*/
+
+body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large,
+body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small {
+    position: relative !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+
+    display: block !important;
+}
+
+/* MAIN CLINIC IMAGE */
+
+body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large {
+    height: 560px !important;
+    min-height: 560px !important;
+}
+
+/* SIDE CLINIC IMAGES */
+
+body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small {
+    height: 268px !important;
+    min-height: 268px !important;
+}
+
+
+/* IMAGE ITSELF */
+
+body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large img,
+body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small img {
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+}
+
+
+/* REMOVE ANY INTERNAL PLACEHOLDER SPACING */
+
+body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large::before,
+body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small::before {
+    pointer-events: none !important;
+}
+
+
+/*==================================================
+    LAPTOP
+==================================================*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large {
+        height: 420px !important;
+        min-height: 420px !important;
+    }
+
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small {
+        height: 198px !important;
+        min-height: 198px !important;
+    }
+
+}
+
+
+/*==================================================
+    TABLET
+==================================================*/
+
+@media (max-width: 991px) {
+
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large {
+        height: 420px !important;
+        min-height: 420px !important;
+    }
+
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small {
+        height: 240px !important;
+        min-height: 240px !important;
+    }
+
+}
+
+
+/*==================================================
+    MOBILE
+==================================================*/
+
+@media (max-width: 767px) {
+
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large,
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small {
+
+        width: 100% !important;
+        height: 260px !important;
+        min-height: 260px !important;
+    }
+
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large img,
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small img {
+
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover !important;
+        object-position: center center !important;
+    }
+
+}
+
+
+/*==================================================
+    SMALL MOBILE
+==================================================*/
+
+@media (max-width: 480px) {
+
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-large,
+    body.home-2-page .home2-clinic .home2-image-placeholder--clinic-small {
+
+        height: 230px !important;
+        min-height: 230px !important;
+    }
+
+}
+
+/*==================================================
+    HOME 2 - OUR MODERN CLINIC
+    STRONG FINAL ALIGNMENT OVERRIDE
+==================================================*/
+
+/* Main clinic layout */
+body.home-2-page .home2-clinic-layout {
+    align-items: start !important;
+}
+
+/* Large image */
+body.home-2-page .home2-clinic-main {
+    align-self: start !important;
+    margin: 0 !important;
+}
+
+/* Right-side image column */
+body.home-2-page .home2-clinic-side {
+    align-self: start !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+
+    gap: 10px !important;
+    row-gap: 10px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Both small images */
+body.home-2-page .home2-clinic-side .home2-image-placeholder--clinic-small {
+    position: relative !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 0 0 auto !important;
+}
+
+/* First small image */
+body.home-2-page .home2-clinic-side .home2-image-placeholder--clinic-small:first-child {
+    margin-top: 0 !important;
+    transform: translateY(0) !important;
+}
+
+/* Second small image - REMOVE EXTRA DOWNWARD POSITION */
+body.home-2-page .home2-clinic-side .home2-image-placeholder--clinic-small:nth-child(2) {
+    margin-top: 0 !important;
+    transform: translateY(0) !important;
+}
+
+/* Images */
+body.home-2-page .home2-clinic-side .home2-image-placeholder--clinic-small img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+}
+
+
+/*==================================================
+    MAIN IMAGE
+==================================================*/
+
+body.home-2-page .home2-clinic-main .home2-image-placeholder--clinic-large {
+    width: 100% !important;
+    height: 560px !important;
+    min-height: 560px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body.home-2-page .home2-clinic-main .home2-image-placeholder--clinic-large img {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/*==================================================
+    FORCE RIGHT COLUMN TO START AT SAME TOP
+    AS LARGE IMAGE
+==================================================*/
+
+body.home-2-page .home2-clinic-gallery {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr) !important;
+    align-items: start !important;
+    gap: 26px !important;
+}
+
+body.home-2-page .home2-clinic-main,
+body.home-2-page .home2-clinic-side {
+    grid-row: 1 !important;
+    align-self: start !important;
+}
+
+
+/*==================================================
+    DESKTOP
+==================================================*/
+
+@media (min-width: 1200px) {
+
+    body.home-2-page .home2-clinic-gallery {
+        align-items: start !important;
+    }
+
+    body.home-2-page .home2-clinic-side {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        transform: translateY(0) !important;
+    }
+
+    body.home-2-page .home2-clinic-side .home2-image-placeholder--clinic-small {
+        height: 268px !important;
+        min-height: 268px !important;
+    }
+
+}
+
+
+/*==================================================
+    LAPTOP
+==================================================*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body.home-2-page .home2-clinic-gallery {
+        grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    body.home-2-page .home2-clinic-side {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    body.home-2-page .home2-clinic-side .home2-image-placeholder--clinic-small {
+        height: 198px !important;
+        min-height: 198px !important;
+    }
+
+}
+
+
+/*==================================================
+    TABLET / MOBILE
+==================================================*/
+
+@media (max-width: 991px) {
+
+    body.home-2-page .home2-clinic-gallery {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+
+    body.home-2-page .home2-clinic-side {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 12px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    body.home-2-page .home2-clinic-side {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+}
+
+/*==================================================
+    ABOUT PAGE - LAST CTA
+    LIGHT MODE TEXT CONTRAST
+    STRONG OVERRIDE
+==================================================*/
+
+body:not(.dark-mode) .about-cta .about-cta-wrapper {
+    position: relative !important;
+}
+
+/* CTA heading */
+body:not(.dark-mode) .about-cta .about-cta-content h2 {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+    opacity: 1 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .10) !important;
+}
+
+/* CTA paragraph */
+body:not(.dark-mode) .about-cta .about-cta-content p {
+    color: rgba(255, 255, 255, .96) !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .08) !important;
+}
+
+/* CTA kicker */
+body:not(.dark-mode) .about-cta .about-cta-content .section-kicker {
+    background: rgba(255, 255, 255, .92) !important;
+    border: 1px solid rgba(255, 255, 255, .35) !important;
+    color: #0F172A !important;
+    font-weight: 800 !important;
+    opacity: 1 !important;
+}
+
+/* CTA buttons */
+body:not(.dark-mode) .about-cta .about-cta-buttons .btn-primary {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+}
+
+body:not(.dark-mode) .about-cta .about-cta-buttons .btn-secondary {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 1px solid rgba(15, 23, 42, .12) !important;
+    font-weight: 800 !important;
+}
+
+/* Button hover */
+body:not(.dark-mode) .about-cta .about-cta-buttons .btn-primary:hover {
+    color: #FFFFFF !important;
+}
+
+body:not(.dark-mode) .about-cta .about-cta-buttons .btn-secondary:hover {
+    background: #F8FAFC !important;
+    color: #0F172A !important;
+}
+
+
+/*==================================================
+    DARK MODE - KEEP ORIGINAL LOOK
+==================================================*/
+
+body.dark-mode .about-cta .about-cta-content h2 {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .about-cta .about-cta-content p {
+    color: rgba(255, 255, 255, .90) !important;
+}
+
+body.dark-mode .about-cta .about-cta-content .section-kicker {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .about-cta .about-cta-buttons .btn-primary {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .about-cta .about-cta-buttons .btn-secondary {
+    color: #FFFFFF !important;
+}
+
+/*==================================================
+    SERVICES PAGE - STRONG CARD PADDING OVERRIDE
+==================================================*/
+
+body .services-page .services-grid {
+    align-items: stretch !important;
+}
+
+body .services-page .services-grid .service-card {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+}
+
+/* Keep image area consistent */
+body .services-page .services-grid .service-card .service-image {
+    width: 100% !important;
+    height: 240px !important;
+    min-height: 240px !important;
+    flex-shrink: 0 !important;
+    overflow: hidden !important;
+}
+
+body .services-page .services-grid .service-card .service-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* Equal internal padding for every card */
+body .services-page .services-grid .service-card .service-content {
+    padding: 28px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 auto !important;
+}
+
+/* Consistent heading spacing */
+body .services-page .services-grid .service-card .service-content h3 {
+    margin: 0 0 14px !important;
+    line-height: 1.3 !important;
+}
+
+/* Consistent description spacing */
+body .services-page .services-grid .service-card .service-content p {
+    margin: 0 0 20px !important;
+    line-height: 1.7 !important;
+}
+
+/* Book Appointment CTA stays at the same position */
+body .services-page .services-grid .service-card .service-content>a {
+    margin-top: auto !important;
+    align-self: flex-start !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-height: 46px !important;
+    padding: 0 20px !important;
+
+    border-radius: 999px !important;
+
+    background: linear-gradient(135deg,
+            var(--primary-1),
+            var(--primary-2)) !important;
+
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+
+    gap: 8px !important;
+
+    box-shadow: 0 10px 24px rgba(14, 165, 233, .20) !important;
+
+    transition: .35s ease !important;
+}
+
+/* Remove arrow because CTA is now Book Appointment */
+body .services-page .services-grid .service-card .service-content>a i {
+    display: none !important;
+}
+
+/* Hover */
+body .services-page .services-grid .service-card .service-content>a:hover {
+    color: #FFFFFF !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 14px 30px rgba(14, 165, 233, .28) !important;
+}
+
+
+/*==================================================
+    TABLET
+==================================================*/
+
+@media (max-width: 991px) {
+
+    body .services-page .services-grid .service-card .service-image {
+        height: 220px !important;
+        min-height: 220px !important;
+    }
+
+    body .services-page .services-grid .service-card .service-content {
+        padding: 24px !important;
+    }
+
+}
+
+
+/*==================================================
+    MOBILE
+==================================================*/
+
+@media (max-width: 767px) {
+
+    body .services-page .services-grid .service-card .service-image {
+        height: 200px !important;
+        min-height: 200px !important;
+    }
+
+    body .services-page .services-grid .service-card .service-content {
+        padding: 22px !important;
+    }
+
+    body .services-page .services-grid .service-card .service-content h3 {
+        margin-bottom: 10px !important;
+    }
+
+    body .services-page .services-grid .service-card .service-content p {
+        margin-bottom: 18px !important;
+    }
+
+    body .services-page .services-grid .service-card .service-content>a {
+        min-height: 44px !important;
+        padding: 0 18px !important;
+        font-size: 14px !important;
+    }
+
+}
+
+
+/*==================================================
+    SMALL MOBILE
+==================================================*/
+
+@media (max-width: 480px) {
+
+    body .services-page .services-grid .service-card .service-image {
+        height: 190px !important;
+        min-height: 190px !important;
+    }
+
+    body .services-page .services-grid .service-card .service-content {
+        padding: 20px !important;
+    }
+
+}
+
+/*==================================================
+    ALL PAGES - LAST CTA
+    LIGHT MODE BOOK APPOINTMENT CONTRAST FIX
+    STRONG OVERRIDE
+==================================================*/
+
+/* ---------- LIGHT MODE ONLY ---------- */
+
+body:not(.dark-mode) .about-cta .about-cta-buttons .btn-primary,
+body:not(.dark-mode) .services-cta .services-cta-buttons .btn-primary,
+body:not(.dark-mode) .clinic-cta .clinic-cta-btn .btn-primary,
+body:not(.dark-mode) .home2-cta .home2-cta-btn {
+
+    background: #0F172A !important;
+    background-image: none !important;
+
+    color: #FFFFFF !important;
+
+    border: 2px solid #0F172A !important;
+
+    font-weight: 800 !important;
+
+    text-shadow: none !important;
+
+    box-shadow:
+        0 10px 24px rgba(15, 23, 42, .24) !important;
+
+    opacity: 1 !important;
+}
+
+
+/* Make sure text inside button also stays white */
+body:not(.dark-mode) .about-cta .about-cta-buttons .btn-primary *,
+body:not(.dark-mode) .services-cta .services-cta-buttons .btn-primary *,
+body:not(.dark-mode) .clinic-cta .clinic-cta-btn .btn-primary *,
+body:not(.dark-mode) .home2-cta .home2-cta-btn * {
+
+    color: #FFFFFF !important;
+}
+
+
+/* ---------- LIGHT MODE HOVER ---------- */
+
+body:not(.dark-mode) .about-cta .about-cta-buttons .btn-primary:hover,
+body:not(.dark-mode) .services-cta .services-cta-buttons .btn-primary:hover,
+body:not(.dark-mode) .clinic-cta .clinic-cta-btn .btn-primary:hover,
+body:not(.dark-mode) .home2-cta .home2-cta-btn:hover {
+
+    background: #1E293B !important;
+    background-image: none !important;
+
+    color: #FFFFFF !important;
+
+    border-color: #1E293B !important;
+
+    transform: translateY(-3px) !important;
+
+    box-shadow:
+        0 14px 30px rgba(15, 23, 42, .30) !important;
+}
+
+
+/* ---------- DARK MODE - KEEP EXISTING DESIGN ---------- */
+
+body.dark-mode .about-cta .about-cta-buttons .btn-primary,
+body.dark-mode .services-cta .services-cta-buttons .btn-primary,
+body.dark-mode .clinic-cta .clinic-cta-btn .btn-primary,
+body.dark-mode .home2-cta .home2-cta-btn {
+
+    color: #FFFFFF !important;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 767px) {
+
+    body:not(.dark-mode) .about-cta .about-cta-buttons .btn-primary,
+    body:not(.dark-mode) .services-cta .services-cta-buttons .btn-primary,
+    body:not(.dark-mode) .clinic-cta .clinic-cta-btn .btn-primary,
+    body:not(.dark-mode) .home2-cta .home2-cta-btn {
+
+        color: #FFFFFF !important;
+        font-weight: 800 !important;
+
+        box-shadow:
+            0 8px 20px rgba(15, 23, 42, .22) !important;
+    }
+
+}
+
+/* Home 1 - Our Dental Services - Learn More Arrow */
+
+.services-section .service-card .service-content .service-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: var(--primary-1) !important;
+    font-weight: 700 !important;
+}
+
+/* Add right arrow */
+.services-section .service-card .service-content .service-link::after {
+    content: "\f061" !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    font-size: 13px !important;
+    transition: transform .3s ease !important;
+}
+
+/* Arrow moves slightly on hover */
+.services-section .service-card .service-content .service-link:hover::after {
+    transform: translateX(4px) !important;
+}
+
+/*==================================================
+    HEADER LOGIN CTA
+    LIGHT MODE HOVER - GRADIENT + CONTRAST FIX
+==================================================*/
+
+body:not(.dark-mode) .header .login-btn:hover,
+body:not(.dark-mode) .header .login-btn:focus-visible,
+body:not(.dark-mode) .header.active .login-btn:hover,
+body:not(.dark-mode) .header.active .login-btn:focus-visible {
+
+    /* Keep the original primary gradient */
+    background: linear-gradient(135deg,
+            var(--primary-1),
+            var(--primary-2)) !important;
+
+    background-color: transparent !important;
+
+    /* Strong readable text */
+    color: #FFFFFF !important;
+
+    border-color: var(--primary-1) !important;
+
+    font-weight: 800 !important;
+
+    text-shadow: none !important;
+
+    transform: translateY(-3px) !important;
+
+    box-shadow:
+        0 14px 28px rgba(14, 165, 233, .22) !important;
+}
+
+
+/* Force Login text to remain white on hover */
+body:not(.dark-mode) .header .login-btn:hover *,
+body:not(.dark-mode) .header .login-btn:focus-visible *,
+body:not(.dark-mode) .header.active .login-btn:hover *,
+body:not(.dark-mode) .header.active .login-btn:focus-visible * {
+    color: #FFFFFF !important;
+}
+
+/*==================================================
+    HOME 2 - HEADER CONTROLS
+    KEEP LOGIN + THEME + RTL VISIBLE
+    LIGHT MODE
+    STRONG OVERRIDE
+==================================================*/
+
+@media (min-width: 992px) {
+
+    body.home-2-page .header .nav-right {
+        display: flex !important;
+        align-items: center !important;
+        gap: 14px !important;
+    }
+
+    /* Theme + RTL icons */
+    body.home-2-page .header .nav-right>.nav-icon-btn {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        width: 40px !important;
+        height: 40px !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        color: var(--black) !important;
+        border: 1px solid var(--border-color) !important;
+        background: transparent !important;
+    }
+
+    /* Login */
+    body.home-2-page .header .nav-right>.login-btn {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        color: var(--primary-1) !important;
+        border-color: var(--primary-1) !important;
+    }
+
+    /* Login hover */
+    body.home-2-page .header .nav-right>.login-btn:hover {
+        background: linear-gradient(135deg,
+                var(--primary-1),
+                var(--primary-2)) !important;
+
+        color: #FFFFFF !important;
+        border-color: var(--primary-1) !important;
+    }
+
+    /* Theme / RTL hover */
+    body.home-2-page .header .nav-right>.nav-icon-btn:hover {
+        background: linear-gradient(135deg,
+                var(--primary-1),
+                var(--primary-2)) !important;
+
+        color: #FFFFFF !important;
+        border-color: var(--primary-1) !important;
+    }
+
+    /* Appointment */
+    body.home-2-page .header .nav-right>.appointment-btn {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Hide hamburger on desktop */
+    body.home-2-page .header .menu-toggle {
+        display: none !important;
+    }
+}
+
+
+/*==================================================
+    HOME 2 - LIGHT MODE ACTIVE HEADER
+==================================================*/
+
+body:not(.dark-mode).home-2-page .header.active .nav-icon-btn {
+    color: var(--black) !important;
+    border-color: var(--border-color) !important;
+    background: transparent !important;
+}
+
+body:not(.dark-mode).home-2-page .header.active .login-btn {
+    color: var(--primary-1) !important;
+    border-color: var(--primary-1) !important;
+}
+
+
+/*==================================================
+    HOME 2 - DARK MODE
+==================================================*/
+
+body.dark-mode.home-2-page .header.active .nav-icon-btn {
+    color: var(--dark-text) !important;
+    border-color: var(--surface-border-light) !important;
+}
+
+body.dark-mode.home-2-page .header.active .login-btn {
+    color: var(--dark-text) !important;
+}
+
+
+/*==================================================
+    KEEP ICONS VISIBLE FOR HOME 2
+    EVEN IF OLD RESPONSIVE RULES EXIST
+==================================================*/
+
+@media (min-width: 992px) and (max-width: 1366px) {
+
+    body.home-2-page .nav-menu {
+        display: flex !important;
+    }
+
+    body.home-2-page .login-btn {
+        display: inline-flex !important;
+    }
+
+    body.home-2-page .appointment-btn {
+        display: inline-flex !important;
+    }
+
+    body.home-2-page .nav-right>.nav-icon-btn {
+        display: flex !important;
+    }
+
+    body.home-2-page .menu-toggle {
+        display: none !important;
+    }
+}
+
+/*=====================================
+    CONTACT FORM CTA - CENTER ALIGN
+======================================*/
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form .form-row,
+.contact-form .form-group {
+    text-align: left;
+}
+
+.contact-form .contact-form-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0;
 }
